@@ -8,7 +8,7 @@ pub:
 }
 
 @[inline]
-pub fn (a f64) eq(b f64, config AlmostConfig) bool {
+pub fn equal(a f64, b f64, config AlmostConfig) bool {
 	if a == b {
 		return true
 	}
