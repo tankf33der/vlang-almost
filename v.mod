@@ -1,7 +1,7 @@
 Module {
 	name: 'almost'
 	description: 'f64 comparison'
-	version: '0.0.3'
+	version: '0.0.4'
 	license: 'Unlicense'
 	dependencies: []
 }
