@@ -1,5 +1,7 @@
 module almost
 
+import math
+
 @[params]
 pub struct AlmostConfig {
 pub:
@@ -9,6 +11,9 @@ pub:
 
 @[inline]
 pub fn equal(a f64, b f64, config AlmostConfig) bool {
+	if math.is_nan(a) && math.is_nan(b) {
+		return true
+	}
 	if a == b {
 		return true
 	}
